@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<album>
+ <photo>
+  <titre>Max De Wilde</titre>
+  <uri>http://philo.ulb.ac.be/photo/37662.JPG</uri>
+  <id>23</id>
+  <date>2014-10-07</date>
+ </photo>
+ <photo>
+  <titre>Simon Hengchen</titre>
+  <uri>https://0.academia-photos.com/4130842/4251444/4945981/s200_simon.hengchen.jpg</uri>
+  <id>2</id>
+  <date>2014-10-07</date>
+ </photo>
+</album>

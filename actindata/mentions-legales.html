@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales — ActInData</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header is-scrolled">
+    <div class="container header__inner">
+      <a href="index.html" class="brand"><img src="assets/img/logo.svg" alt="" width="36" height="36"><span>Act<strong>In</strong>Data</span></a>
+      <a href="index.html" class="btn btn--ghost btn--sm">← Retour au site</a>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <h1>Mentions légales</h1>
+      <p class="note">À compléter avec les informations officielles de l'entreprise une fois immatriculée (les champs entre crochets).</p>
+
+      <h2>Éditeur du site</h2>
+      <p>ActInData — [forme juridique] au capital de [montant] €<br>
+      Siège social : [adresse]<br>
+      SIREN / RCS : [numéro]<br>
+      Directeur de la publication : [nom]<br>
+      Contact : contact@actindata.com</p>
+
+      <h2>Hébergement</h2>
+      <p>[Nom de l'hébergeur, adresse et téléphone — par exemple GitHub Pages, Netlify, OVHcloud…]</p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus de ce site (textes, logos, visuels) est la propriété d'ActInData, sauf mention contraire. Toute reproduction sans autorisation est interdite.</p>
+
+      <h2 id="confidentialite">Politique de confidentialité</h2>
+      <p>Les informations transmises via le formulaire de contact (nom, entreprise, e-mail, téléphone, message) sont utilisées uniquement pour répondre à votre demande. Elles ne sont ni vendues ni cédées à des tiers et sont conservées au maximum 3 ans après le dernier contact.</p>
+      <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition sur vos données. Pour l'exercer, écrivez à contact@actindata.com.</p>
+
+      <h2>Cookies</h2>
+      <p>Ce site n'utilise pas de cookies de suivi publicitaire. Seules les polices sont chargées depuis Google Fonts.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom" style="margin-top:0;border:0;padding-top:0">
+      <p>© <span id="year"></span> ActInData. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

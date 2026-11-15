@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ActInData — Conseil & solutions Data et Intelligence Artificielle</title>
+  <meta name="description" content="ActInData accompagne les entreprises et organisations dans leur transformation par la donnée et l'IA : stratégie data, data engineering, business intelligence, machine learning, IA générative et formation.">
+  <meta property="og:title" content="ActInData — Passez de la donnée à l'action">
+  <meta property="og:description" content="Stratégie data, data engineering, BI, machine learning et IA générative. Des solutions concrètes, utiles et mesurables.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B1020">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="brand" aria-label="ActInData — accueil">
+        <img src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span>Act<strong>In</strong>Data</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#methode">Méthode</a>
+        <a href="#secteurs">Secteurs</a>
+        <a href="#formations">Formations</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact" class="btn btn--primary btn--sm">Parlons de votre projet</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="accueil">
+      <canvas id="network" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">Cabinet de conseil Data &amp; IA</p>
+        <h1 class="reveal">De la donnée<br>à <span class="gradient-text" id="typed">l'action</span>.</h1>
+        <p class="hero__lead reveal">
+          ActInData aide les entreprises et les organisations à valoriser leurs données :
+          stratégie, plateformes data, tableaux de bord, machine learning et IA générative.
+          Des solutions concrètes, utiles et mesurables.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#contact" class="btn btn--primary">Demander un diagnostic gratuit</a>
+          <a href="#services" class="btn btn--ghost">Découvrir nos expertises →</a>
+        </div>
+        <ul class="hero__tags reveal" aria-label="Domaines d'expertise">
+          <li>Stratégie Data</li><li>Data Engineering</li><li>Business Intelligence</li>
+          <li>Machine Learning</li><li>IA Générative</li><li>Formation</li>
+        </ul>
+      </div>
+      <a href="#valeur" class="scroll-hint" aria-label="Défiler vers le bas"><span></span></a>
+    </section>
+
+    <!-- ================= PROPOSITION DE VALEUR ================= -->
+    <section class="section value" id="valeur">
+      <div class="container value__grid">
+        <div class="reveal">
+          <p class="eyebrow">Pourquoi ActInData ?</p>
+          <h2>La plupart des données dorment.<br>Nous les faisons <span class="gradient-text">travailler</span>.</h2>
+        </div>
+        <div class="value__text reveal">
+          <p>
+            Les organisations accumulent des données dans leurs ERP, CRM, fichiers Excel, applications
+            métiers ou capteurs… sans toujours parvenir à en tirer des décisions. Notre mission :
+            transformer ce potentiel en <strong>leviers de performance</strong>.
+          </p>
+          <p>
+            Notre nom résume notre conviction : <strong>Act In Data</strong> — agir à partir de la donnée.
+            Chaque projet que nous menons part d'un enjeu métier et se termine par un impact concret.
+          </p>
+        </div>
+      </div>
+      <div class="container pillars">
+        <article class="pillar reveal">
+          <div class="pillar__num">01</div>
+          <h3>Orienté impact</h3>
+          <p>Nous partons de vos objectifs métier, pas de la technologie. Chaque livrable répond à une question précise.</p>
+        </article>
+        <article class="pillar reveal">
+          <div class="pillar__num">02</div>
+          <h3>Pragmatique</h3>
+          <p>Des preuves de valeur rapides, puis une industrialisation maîtrisée. Pas d'usine à gaz.</p>
+        </article>
+        <article class="pillar reveal">
+          <div class="pillar__num">03</div>
+          <h3>Transfert de compétences</h3>
+          <p>Nous formons vos équipes pour que vous restiez autonomes après notre intervention.</p>
+        </article>
+        <article class="pillar reveal">
+          <div class="pillar__num">04</div>
+          <h3>IA responsable</h3>
+          <p>Sécurité, confidentialité, conformité RGPD et éthique intégrées dès la conception.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nos expertises</p>
+          <h2>Une offre complète, de la stratégie à la production</h2>
+          <p>Six pôles d'expertise pour couvrir l'ensemble de la chaîne de valeur de la donnée.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg>
+            </div>
+            <h3>Stratégie &amp; Gouvernance Data</h3>
+            <p>Audit de maturité, feuille de route data &amp; IA, identification des cas d'usage à forte valeur, gouvernance et qualité des données.</p>
+            <ul><li>Diagnostic de maturité</li><li>Roadmap &amp; priorisation</li><li>Data gouvernance &amp; RGPD</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+            <h3>Data Engineering</h3>
+            <p>Conception et mise en place de plateformes data modernes : pipelines ETL/ELT, data warehouse, data lake, cloud et automatisation.</p>
+            <ul><li>Pipelines &amp; intégration</li><li>Architecture cloud</li><li>Modern Data Stack</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+            </div>
+            <h3>Business Intelligence</h3>
+            <p>Tableaux de bord interactifs et reporting automatisé pour piloter votre activité en temps réel et partager les bons indicateurs.</p>
+            <ul><li>Power BI, Looker, Tableau</li><li>KPI &amp; data storytelling</li><li>Reporting automatisé</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7l3 9M16 7l-3 9M8.5 6h7"/></svg>
+            </div>
+            <h3>Data Science &amp; Machine Learning</h3>
+            <p>Modèles prédictifs et analytiques avancées : prévision de la demande, scoring, détection d'anomalies, segmentation, optimisation.</p>
+            <ul><li>Modélisation prédictive</li><li>MLOps &amp; mise en production</li><li>Analyse statistique</li></ul>
+          </article>
+
+          <article class="card card--highlight reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 014 4v1a3 3 0 013 3 3 3 0 01-1 2.2A3.5 3.5 0 0115 19h-1v2h-4v-2H9a3.5 3.5 0 01-3-5.8A3 3 0 015 11a3 3 0 013-3V7a4 4 0 014-4z"/></svg>
+            </div>
+            <span class="badge">Tendance</span>
+            <h3>IA Générative &amp; Agents</h3>
+            <p>Assistants intelligents, chatbots sur vos documents (RAG), agents IA et automatisation des tâches à faible valeur ajoutée.</p>
+            <ul><li>Chatbots &amp; assistants RAG</li><li>Agents &amp; automatisation</li><li>Intégration LLM sécurisée</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+            </div>
+            <h3>Formation &amp; Acculturation</h3>
+            <p>Programmes sur mesure pour dirigeants, équipes métiers et profils techniques afin de diffuser la culture data &amp; IA.</p>
+            <ul><li>Ateliers dirigeants</li><li>Bootcamps techniques</li><li>IA au quotidien</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MÉTHODE ================= -->
+    <section class="section method" id="methode">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Notre méthode</p>
+          <h2>Une démarche en 4 étapes, centrée sur la valeur</h2>
+          <p>Une approche agile qui sécurise vos investissements et produit des résultats visibles rapidement.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__dot">1</span>
+            <h3>Diagnostiquer</h3>
+            <p>Compréhension de vos enjeux, audit de vos données et de vos outils, identification des opportunités.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot">2</span>
+            <h3>Concevoir</h3>
+            <p>Définition de la solution cible, priorisation des cas d'usage et construction d'une feuille de route chiffrée.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot">3</span>
+            <h3>Déployer</h3>
+            <p>Prototype rapide (POC), itérations avec vos équipes, puis industrialisation et mise en production.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot">4</span>
+            <h3>Pérenniser</h3>
+            <p>Formation, documentation, suivi de la performance et amélioration continue de la solution.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CAS D'USAGE ================= -->
+    <section class="section usecases" id="cas-usage">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Cas d'usage</p>
+          <h2>Ce que la data et l'IA peuvent faire pour vous</h2>
+          <p>Quelques exemples de problématiques que nous résolvons.</p>
+        </div>
+        <div class="usecase-tabs reveal" role="tablist" aria-label="Exemples de cas d'usage">
+          <button role="tab" aria-selected="true" class="tab is-active" data-tab="pilotage">Piloter</button>
+          <button role="tab" aria-selected="false" class="tab" data-tab="predire">Prédire</button>
+          <button role="tab" aria-selected="false" class="tab" data-tab="automatiser">Automatiser</button>
+          <button role="tab" aria-selected="false" class="tab" data-tab="personnaliser">Personnaliser</button>
+        </div>
+        <div class="usecase-panels reveal">
+          <div class="panel is-active" id="pilotage" role="tabpanel">
+            <div>
+              <h3>Un tableau de bord unique pour toute la direction</h3>
+              <p>Consolider des données dispersées (ventes, finance, RH, opérations) dans un entrepôt unique et offrir à chaque responsable des indicateurs fiables, mis à jour automatiquement.</p>
+              <ul class="checks"><li>Fin des reportings manuels sur Excel</li><li>Une seule version de la vérité</li><li>Décisions plus rapides</li></ul>
+            </div>
+            <div class="panel__visual" aria-hidden="true">
+              <div class="mock-kpis"><span>CA <b>+12%</b></span><span>Marge <b>34%</b></span><span>Clients <b>1 284</b></span></div>
+              <div class="mock-bars"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:48%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:85%"></i><i style="--h:78%"></i><i style="--h:92%"></i></div>
+            </div>
+          </div>
+          <div class="panel" id="predire" role="tabpanel" hidden>
+            <div>
+              <h3>Anticiper la demande et les risques</h3>
+              <p>Des modèles de machine learning pour prévoir les ventes, optimiser les stocks, détecter la fraude ou identifier les clients susceptibles de partir.</p>
+              <ul class="checks"><li>Prévisions de ventes et de stocks</li><li>Scoring de risque et détection de fraude</li><li>Prédiction de l'attrition client</li></ul>
+            </div>
+            <div class="panel__visual" aria-hidden="true">
+              <svg class="mock-line" viewBox="0 0 300 140" preserveAspectRatio="none">
+                <polyline points="0,110 40,95 80,100 120,70 160,78 200,50" fill="none" stroke="#22D3EE" stroke-width="3"/>
+                <polyline points="200,50 240,40 280,28 300,22" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="6 6"/>
+                <path d="M200,50 L300,8 L300,38 L200,50Z" fill="#8B5CF6" opacity=".18"/>
+              </svg>
+              <p class="mock-caption">Historique &nbsp;·&nbsp; <span>Prévision</span></p>
+            </div>
+          </div>
+          <div class="panel" id="automatiser" role="tabpanel" hidden>
+            <div>
+              <h3>Libérer vos équipes des tâches répétitives</h3>
+              <p>Extraction automatique d'informations dans les factures, contrats ou e-mails, traitement des demandes et agents IA connectés à vos outils.</p>
+              <ul class="checks"><li>Traitement intelligent de documents</li><li>Agents IA connectés à vos applications</li><li>Workflows automatisés de bout en bout</li></ul>
+            </div>
+            <div class="panel__visual" aria-hidden="true">
+              <div class="mock-flow"><span>📄 Document</span><em>→</em><span>🤖 IA</span><em>→</em><span>✅ ERP</span></div>
+            </div>
+          </div>
+          <div class="panel" id="personnaliser" role="tabpanel" hidden>
+            <div>
+              <h3>Un assistant IA qui connaît votre entreprise</h3>
+              <p>Un chatbot sécurisé, alimenté par vos documents internes, procédures et bases de connaissances, pour répondre instantanément à vos collaborateurs ou clients.</p>
+              <ul class="checks"><li>Réponses sourcées à partir de vos documents</li><li>Support client 24h/24</li><li>Données hébergées en sécurité</li></ul>
+            </div>
+            <div class="panel__visual" aria-hidden="true">
+              <div class="mock-chat">
+                <p class="me">Quelle est la procédure de remboursement ?</p>
+                <p class="bot">Selon la note RH-2024-07, la demande se fait via le portail sous 30 jours, avec justificatifs. <small>Source : Procédures RH</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTEURS ================= -->
+    <section class="section sectors" id="secteurs">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Secteurs</p>
+          <h2>Nous intervenons dans tous les secteurs</h2>
+          <p>Chaque secteur a ses données, ses contraintes et ses opportunités. Nous adaptons nos solutions à votre réalité.</p>
+        </div>
+        <div class="sector-grid">
+          <div class="sector reveal"><span>🏦</span>Banque, Finance &amp; Assurance</div>
+          <div class="sector reveal"><span>🛒</span>Commerce &amp; Distribution</div>
+          <div class="sector reveal"><span>📡</span>Télécoms &amp; Médias</div>
+          <div class="sector reveal"><span>⚡</span>Énergie &amp; Industrie</div>
+          <div class="sector reveal"><span>🏥</span>Santé</div>
+          <div class="sector reveal"><span>🌾</span>Agriculture</div>
+          <div class="sector reveal"><span>🚚</span>Transport &amp; Logistique</div>
+          <div class="sector reveal"><span>🏛️</span>Secteur public &amp; ONG</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNOLOGIES ================= -->
+    <section class="section tech" aria-label="Technologies">
+      <div class="container">
+        <p class="tech__title reveal">Les technologies que nous maîtrisons</p>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Python</span><span>SQL</span><span>Power BI</span><span>Tableau</span><span>Looker</span><span>dbt</span><span>Airflow</span><span>Spark</span><span>Snowflake</span><span>BigQuery</span><span>Azure</span><span>AWS</span><span>Google Cloud</span><span>PostgreSQL</span><span>scikit-learn</span><span>PyTorch</span><span>LangChain</span><span>LLM</span><span>Docker</span>
+          <span>Python</span><span>SQL</span><span>Power BI</span><span>Tableau</span><span>Looker</span><span>dbt</span><span>Airflow</span><span>Spark</span><span>Snowflake</span><span>BigQuery</span><span>Azure</span><span>AWS</span><span>Google Cloud</span><span>PostgreSQL</span><span>scikit-learn</span><span>PyTorch</span><span>LangChain</span><span>LLM</span><span>Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORMATIONS ================= -->
+    <section class="section trainings" id="formations">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">ActInData Academy</p>
+          <h2>Formez vos équipes à la data et à l'IA</h2>
+          <p>Des formations pratiques, en présentiel ou à distance, adaptées au niveau et aux métiers de vos collaborateurs.</p>
+        </div>
+        <div class="training-grid">
+          <article class="training reveal">
+            <span class="training__level">Dirigeants</span>
+            <h3>IA &amp; Data pour décideurs</h3>
+            <p>Comprendre les enjeux, identifier les opportunités et piloter un projet data/IA.</p>
+            <p class="training__meta">1 jour · Atelier</p>
+          </article>
+          <article class="training reveal">
+            <span class="training__level">Tous publics</span>
+            <h3>L'IA générative au quotidien</h3>
+            <p>Utiliser efficacement les assistants IA pour gagner en productivité, en toute sécurité.</p>
+            <p class="training__meta">1 à 2 jours · Pratique</p>
+          </article>
+          <article class="training reveal">
+            <span class="training__level">Analystes</span>
+            <h3>Power BI &amp; Data Visualisation</h3>
+            <p>Construire des tableaux de bord clairs et percutants, du modèle de données au storytelling.</p>
+            <p class="training__meta">3 jours · Projet</p>
+          </article>
+          <article class="training reveal">
+            <span class="training__level">Techniques</span>
+            <h3>Python, Machine Learning &amp; LLM</h3>
+            <p>De l'analyse de données au déploiement de modèles et d'applications d'IA générative.</p>
+            <p class="training__meta">5 jours · Bootcamp</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= À PROPOS ================= -->
+    <section class="section about" id="apropos">
+      <div class="container about__grid">
+        <div class="about__visual reveal" aria-hidden="true">
+          <div class="orbit">
+            <span class="orbit__core"><span>Act<b>In</b>Data</span></span>
+            <span class="orbit__item o1">Data</span>
+            <span class="orbit__item o2">IA</span>
+            <span class="orbit__item o3">Métier</span>
+            <span class="orbit__item o4">Impact</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">À propos</p>
+          <h2>Un partenaire de confiance pour votre transformation</h2>
+          <p>
+            ActInData est une jeune entreprise de services numériques spécialisée dans la data et l'intelligence artificielle.
+            Nous réunissons des compétences en ingénierie des données, en statistiques, en développement et en conseil métier.
+          </p>
+          <p>
+            Notre ambition : rendre la data et l'IA <strong>accessibles à toutes les organisations</strong>, des PME aux grands groupes,
+            avec un accompagnement de proximité, des tarifs transparents et un véritable engagement sur les résultats.
+          </p>
+          <div class="commitments">
+            <div><b>Proximité</b><span>Un interlocuteur dédié tout au long du projet</span></div>
+            <div><b>Transparence</b><span>Devis clairs, jalons et livrables définis</span></div>
+            <div><b>Exigence</b><span>Code documenté, bonnes pratiques et sécurité</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <h2>Prêt à faire parler vos données ?</h2>
+          <p>Bénéficiez d'un diagnostic gratuit de 30 minutes pour identifier vos premiers cas d'usage.</p>
+        </div>
+        <a href="#contact" class="btn btn--light">Réserver mon diagnostic</a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Parlons de votre projet</h2>
+          <p>Décrivez-nous votre besoin, nous revenons vers vous sous 48 heures ouvrées.</p>
+          <ul class="contact__info">
+            <li><span>✉️</span><a href="mailto:contact@actindata.com">contact@actindata.com</a></li>
+            <li><span>📞</span><a href="tel:+33000000000">+33 0 00 00 00 00</a></li>
+            <li><span>📍</span>Interventions sur site et à distance</li>
+            <li><span>🔗</span><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn — ActInData</a></li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="form__row">
+            <label>Nom complet<input type="text" name="nom" required autocomplete="name"></label>
+            <label>Entreprise<input type="text" name="entreprise" autocomplete="organization"></label>
+          </div>
+          <div class="form__row">
+            <label>E-mail professionnel<input type="email" name="email" required autocomplete="email"></label>
+            <label>Téléphone<input type="tel" name="telephone" autocomplete="tel"></label>
+          </div>
+          <label>Votre besoin
+            <select name="besoin">
+              <option>Stratégie &amp; Gouvernance Data</option>
+              <option>Data Engineering</option>
+              <option>Business Intelligence</option>
+              <option>Data Science &amp; Machine Learning</option>
+              <option>IA Générative &amp; Agents</option>
+              <option>Formation</option>
+              <option>Autre / je ne sais pas encore</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="5" required placeholder="Parlez-nous de votre contexte et de vos objectifs…"></textarea></label>
+          <label class="form__consent"><input type="checkbox" name="consent" required> J'accepte que mes données soient utilisées pour être recontacté(e).</label>
+          <button type="submit" class="btn btn--primary">Envoyer ma demande</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#accueil" class="brand">
+          <img src="assets/img/logo.svg" alt="" width="32" height="32">
+          <span>Act<strong>In</strong>Data</span>
+        </a>
+        <p class="footer__tagline">De la donnée à l'action.<br>Conseil, solutions et formations Data &amp; IA.</p>
+      </div>
+      <div>
+        <h4>Expertises</h4>
+        <a href="#services">Stratégie Data</a>
+        <a href="#services">Data Engineering</a>
+        <a href="#services">Business Intelligence</a>
+        <a href="#services">Machine Learning</a>
+        <a href="#services">IA Générative</a>
+      </div>
+      <div>
+        <h4>Entreprise</h4>
+        <a href="#apropos">À propos</a>
+        <a href="#methode">Méthode</a>
+        <a href="#formations">Formations</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="mentions-legales.html#confidentialite">Confidentialité</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> ActInData. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
